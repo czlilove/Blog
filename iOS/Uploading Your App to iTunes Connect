@@ -17,7 +17,9 @@ If you include symbols when uploading your app to iTunes Connect, Apple collects
 You should submit to the store the last archive you distributed for testing, so before you upload your final candidate, review Apple guidelines and the Xcode project configuration, described in Prepare Your App for Submission.
 About Store Provisioning Profiles
 
-A store provisioning profile is a distribution provisioning profile that authorizes your app to use certain app services and ensures that you are the one uploading your app. A store provisioning profile contains a single App ID that matches one or more of your apps and a distribution certificate. You configure the App ID indirectly through Xcode to use certain app services. You enable and configure app services by setting entitlements and performing other configuration steps. Some entitlements are enabled for an App ID (a set of apps created by your team), and others are set in the Xcode project. When you upload your app to the store, Xcode signs the app bundle with the distribution certificate referenced in the store provisioning profile.
+
+pp文件中包括一个APP ID和一个发布证书（包含公钥public key）。
+当你把app上传到appstore时，Xcode使用pp文件中的发布证书来签名app包。
 
 
 You must have an iTunes Connect app record to validate and upload your app to iTunes Connect. To create your app record, read Creating an App Record before continuing. The bundle ID you enter in iTunes Connect must match the bundle ID in your Xcode project. After you upload your first build, you can’t change the bundle ID in iTunes Connect. To change your bundle ID in the Xcode project, read Setting the Bundle ID.
