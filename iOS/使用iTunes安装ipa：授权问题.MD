@@ -5,6 +5,7 @@
 
 上面两遍都检查了，实在没有解决办法，只好去问谷哥，找到了这篇文章：
 http://stackoverflow.com/questions/20353250/the-iphone-could-not-be-synced-because-this-computer-is-no-longer-authorized-fo
+
 看到下面这个回答
 >This phone contains apps that were purchased with different Apple ID than the one that the computer is authorized for. So you need to delete those apps to authorize this computer. 
 
