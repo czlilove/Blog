@@ -6,7 +6,7 @@
 上面两遍都检查了，实在没有解决办法，只好去问谷哥，找到了这篇文章：
 http://stackoverflow.com/questions/20353250/the-iphone-could-not-be-synced-because-this-computer-is-no-longer-authorized-fo
 看到下面这个回答
->This phone contains apps that were purchased with different Apple ID than the one that the computer is authorized for. So you need to delete those apps to authorize this computer.
+This phone contains apps that were purchased with different Apple ID than the one that the computer is authorized for. So you need to delete those apps to authorize this computer.
 意思是手机上安装有使用其他Apple id下载的app，而这台电脑并没有被授权使用这个apple id。所以我们需要把手机上用其他apple id下载的app删除了。
 看到这立马醒悟，自己之前使用第三方手机助手（苹果助手，pp助手）在手机上安装了一个app。
 把这个app删除，再同步，就把ipa顺利的同步到手机行了。
