@@ -12,4 +12,12 @@
 
 公元0001年1月1日凌晨0时0分1秒这个时间的Ticks就是10000000
 
-时间戳：
+Unix时间戳：表示从UTC时间1970年1月1日0时0分0秒到现在所经历的秒数。
+UTC时间比北京时间慢8小时。比如现在北京时间是24号晚上8点，那么UTC时间还是中午十二点。
+
+Unix时间戳的计算方法：
+       public static long GetTimeStamp()
+       {
+           TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
+           return Convert.ToInt64(ts.TotalSeconds * 1000);
+       }
