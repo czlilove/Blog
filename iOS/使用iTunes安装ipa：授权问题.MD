@@ -13,4 +13,4 @@ http://stackoverflow.com/questions/20353250/the-iphone-could-not-be-synced-becau
 看到这立马醒悟，自己之前使用第三方手机助手（苹果助手，pp助手）在手机上安装了一个app。
 把这个app删除，再同步，就把ipa顺利的同步到手机行了。
 
-注意：上面，既不需要iTunes登录apple id，更不需要向电脑授权，就能同步安装ipa到手机上。
+注意：**上面，既不需要iTunes登录apple id，更不需要向电脑授权，就能同步安装ipa到手机上**。
