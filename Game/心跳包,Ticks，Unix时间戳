@@ -13,7 +13,7 @@
 公元0001年1月1日凌晨0时0分1秒这个时间的Ticks就是10000000
 
 Unix时间戳：表示从UTC时间1970年1月1日0时0分0秒到现在所经历的秒数。
-UTC时间比北京时间慢8小时。比如现在北京时间是24号晚上8点，那么UTC时间还是中午十二点。
+UTC时间比北京时间慢8小时。比如现在北京时间是24号晚上8点，那么UTC时间还是24号中午十二点。
 
 Unix时间戳的计算方法：
        public static long GetTimeStamp()
@@ -21,3 +21,11 @@ Unix时间戳的计算方法：
            TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
            return Convert.ToInt64(ts.TotalSeconds * 1000);
        }
+
+DateTime这个结构体，除了年月日时分秒这些属性外，还有一个kind属性。表示当前时间所在的时区，有三种，Utc,Local，Unspecified，
+分别表示Utc时间，计算机本地时间（也就是北京时间），未指定（一般也是本地时间）
+时间（2017,1,1,8,0,0,Local）和时间（2017,1,1,8,0,0,Utc）是不一样的。前者比后者晚8小时。
+Kind属性可以在DateTime构造函数中指定。DateTime.UtcNow和DateTime.ToUniversalTime()返回的DateTime的Kind属性都是Utc
+
+上面 TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
+DateTime的减法运算实际上是不考虑时区的。也就是说不管时区，是拿两个时间的年月日时分秒去互减得到一个时间差。
