@@ -1,5 +1,5 @@
 玩家进入游戏以后，客户端定时（比如每十秒）向服务器发送心跳包，服务器收到心跳包后，立即向客户端发送响应消息。
-心跳包及其服务端响应包中的内容通常是服务器的时间。
+**心跳包及其服务端响应包中的内容通常是服务器的时间**。
 
 对于C#来说，System.DateTime.Ticks表示自公元0001年1月1日凌晨0点0时0分所经历的以100毫微秒为单位的整数。
 一秒是10的7次方个tick。也就是1千万个tick.
@@ -23,11 +23,11 @@ Unix时间戳的计算方法：
            return Convert.ToInt64(ts.TotalSeconds * 1000);
        }
 
-DateTime这个结构体，除了年月日时分秒这些属性外，还有一个kind属性。表示当前时间所在的时区，有三种，Utc,Local，Unspecified，
+**DateTime这个结构体，除了年月日时分秒这些属性外，还有一个kind属性。表示当前时间所在的时区，有三种，Utc,Local，Unspecified，**
 分别表示Utc时间，计算机本地时间（也就是北京时间），未指定（一般也是本地时间）
 时间（2017,1,1,8,0,0,Local）和时间（2017,1,1,8,0,0,Utc）是不一样的。前者比后者晚8小时。
 Kind属性可以在DateTime构造函数中指定。DateTime.UtcNow和DateTime.ToUniversalTime()返回的DateTime的Kind属性都是Utc
 
 上面 TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
-DateTime的减法运算实际上是不考虑时区的。也就是说不管时区，是拿两个时间的年月日时分秒去互减得到一个时间差。
+**DateTime的减法运算实际上是不考虑时区的。也就是说不管时区，是拿两个时间的年月日时分秒去互减得到一个时间差**。
 
