@@ -31,3 +31,8 @@ Kind属性可以在DateTime构造函数中指定。DateTime.UtcNow和DateTime.To
 上面 TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
 **DateTime的减法运算实际上是不考虑时区的。也就是说不管时区，是拿两个时间的年月日时分秒去互减得到一个时间差**。
 
+>***The members of the DateTimeKind enumeration are used in conversion operations between local time and Coordinated Universal Time (UTC), but not in comparison or arithmetic operations. For more information about time conversions, see[ Converting Times Between Time Zones](https://msdn.microsoft.com/zh-cn/library/bb397769(v=vs.110).aspx).***
+
+**上面这段描述引用自MSDN，意思是DateTimeKind这一属性只用于本地时间与UTC时间的转换，不用于比较和数学运算。**
+
+
