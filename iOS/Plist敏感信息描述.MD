@@ -7,3 +7,5 @@
 苹果文档如下：
 https://developer.apple.com/library/content/qa/qa1937/_index.html
 
+实际上，如果不添加描述的话，不仅提交时无法构建版本，使用app中需要使用相机等敏感信息的功能时，app会crash的。
+
