@@ -11,3 +11,5 @@ https://developer.apple.com/library/content/technotes/tn2151/_index.html
 https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AnalyzingCrashReports/AnalyzingCrashReports.html
 
 https://developer.apple.com/library/content/qa/qa1747/_index.html
+
+http://www.jianshu.com/p/12a2402b29c2
