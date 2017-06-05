@@ -19,3 +19,5 @@
     }
 
 所以，foreach里面的类必须有一个GetEnumerator方法返回一个IEnumerator（或者是自定义的类实现了MoveNext和Current即可）实例。
+
+enumerator.Current的类型是object，所以这里有一个强制转换
