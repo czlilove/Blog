@@ -19,5 +19,8 @@
     }
 
 所以，foreach里面的类必须有一个GetEnumerator方法返回一个IEnumerator（或者是自定义的类实现了MoveNext和Current即可）实例。
+>In C#, it is not necessary for a collection class to implement IEnumerable and IEnumerator to be compatible with foreach. If the class has the required GetEnumerator, MoveNext, Reset, and Current members, it will work with foreach. Omitting the interfaces has the advantage of enabling you to define a return type for Current that is more specific than Object. This provides type safety.
 
 enumerator.Current的类型是object，所以这里有一个强制转换
+
+
