@@ -10,3 +10,5 @@ MainActivity可以直接使用R类，因为他们在同一个package。
 如果修改了xml中的package属性名或者修改了源代码的package名，必然导致R.java与MainActivity的包名不一致。MainActivity就无法识别R类。
 
 比如修改xml中的package属性名为com.y,R.java的包名也自动换成了com.y,那么MainActivity就无法识别R类了，除非import com.y.R
+
+https://developer.android.com/studio/build/application-id.html?hl=en-us
