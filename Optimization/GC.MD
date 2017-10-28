@@ -1,3 +1,7 @@
+https://unity3d.com/cn/learn/tutorials/topics/performance-optimization/optimizing-garbage-collection-unity-games?playlist=44069
+
+https://docs.unity3d.com/Manual/BestPracticeUnderstandingPerformanceInUnity4-1.html
+
 概述：
 
 Unity对自己的核心引擎代码和我们自己写的脚本代码，采用不同的内存管理方式。前者需要手动管理，后者采用自动管理方式，也就是自动触发GC。
